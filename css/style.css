@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+header {
+    width: 100%;
+    height: 50px;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+nav {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    transition: .5s;
+}
+nav .logo-container img {
+    width: 80px;
+    margin: 0 10px 0 10px;
+    border-right: 1px solid white;
+    padding-right: 15px;
+}
+#time {
+    cursor: default;
+}
+nav .logo-container {
+    margin-right: auto;
+    display: flex;
+}
+.logo-container div {
+    color: #fff;
+    transition: .3s;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.navbar ul {
+    display: flex;
+    margin-right: 20px;
+}
+ul li {
+    margin: 0 15px;
+    list-style: none;
+}
+ul li a {
+    color: #f1f1f1;
+    text-decoration: none;
+    transition: color .4s;
+    font-family: 'Segoe UI', sans-serif;
+    font-weight: 500;
+    letter-spacing: .5px;
+}
+ul li:nth-child(1) a {
+    color: #e50914;
+    font-weight: 700;
+}
+ul li a:hover {
+    color: #e50914;
+}
+.red-text {
+    color: #e50914;
+}
+.black-text {
+    color: #221f1f;
+}
+
+section {
+    height: 100vh;
+    background-color: #221f1f;
+}
+.banner {
+    /* background-image: url('../img/netflix-background.jpeg'); */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: .4s ease-in-out;
+}
+
+.description-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: default;
+}
+.description-container ul {
+    display: flex;
+}
+.description-container ul li {
+    list-style: none;
+    border-right: 1px solid white;
+    color: white;
+    padding-right: 15px;
+    font-weight: 500;
+    margin: 0 5px;
+    cursor: pointer;
+    transition: .3s;
+}
+.description-container ul li:hover {
+    color: #b4b4b4;
+}
+.description-container ul li:nth-child(3) {
+    border: none;
+}
+.description-container span {
+    font-weight: 400;
+    color: #b4b4b4;
+}
+.title {
+    color: white;
+    font-size: 5em;
+    cursor: default;
+}
+.description {
+    color: #fff;
+    width: 70%;
+    cursor: default;
+    margin-top: 10px;
+}
+.btn-container {
+    display: flex;
+    margin-top: 20px;
+}
+.btn {
+    width: 150px;
+    height: 50px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 2px;
+    font-weight: 600;
+    background-color: #e50914;
+    color: white;
+    transition: .5s;
+    box-shadow: 0 0 5px 1px #000;
+}
+.btn:hover {
+    border: 2px solid #fff;
+    background-color: transparent;
+    box-shadow: 0 0 5px 1px #fff;
+}
+.btn2 {
+    width: 150px;
+    height: 50px;
+    font-weight: bold;
+    border: 3px solid #e50914;
+    background-color: transparent;
+    color: #e50914;
+    transition: .5s;
+    overflow: hidden;
+    padding-left: 12px;
+    text-wrap: nowrap;
+    border-radius: 2px;
+}
+.btn2 span {
+    margin-right: 10px;
+}
+.btn2:hover {
+    background-color: #e50914;
+    color: #fff;
+    width: 165px;
+    box-shadow: 0 0 5px 1px #e50914;
+}
+
+@media screen and (max-width: 1024px) {
+    .description-container {
+        margin-left: 20px;
+    }
+    .nav-bottom {
+        visibility: hidden;
+    }
+}
+@media screen and (max-width: 768px) {
+    .description-container {
+        margin-left: 20px;
+        scale: .9;
+    }
+    nav ul li a {
+        font-size: 15px;
+    }
+    nav ul li {
+        margin: 7px;
+    }
+}
+@media screen and (width > 430px) {
+    .nav-bottom {
+        display: none;
+    }
+}
+@media screen and (max-width: 430px) {
+    .description-container {
+        scale: .5;
+        width: 100%;
+        position: fixed;
+        left: -70px;
+        top: 300px;
+    }
+    .description-container #listed,
+    .description-container #details {
+        text-wrap: nowrap;
+    }
+    .banner {
+        background-image: url('../img/netflix-background.jpeg');
+    }
+    .navbar ul  {
+        display: none;
+    }
+    .nav-bottom {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 60px;
+        border-radius: 10px 10px 0 0;
+        background: rgba(255, 244, 244, 0.432);
+        background: linear-gradient(0deg, rgba(255, 244, 244, 0.356) 0%, rgba(255, 209, 209, 0.082) 100%);
+        backdrop-filter: blur(3px);
+        position: fixed;
+        z-index: 1000;
+        bottom: 0;
+        visibility: visible;
+    }
+    .nav-bottom ul li a:hover {
+        color: #e50914;
+    }
+    .nav-bottom ul {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        width: 100%;
+    }
+    .nav-bottom ul li {
+        margin: 0 10px;
+    }
+    .nav-bottom ul li a {
+        color: #000;
+    }
+    .mobile-banner {
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 100px;
+        backdrop-filter: blur(5px);
+        backdrop-filter: brightness(.3);
+    }
+    .mobile-banner div {
+        width: 100%;
+        height: 220px;
+        box-shadow: 0 0 10px 1px #ffffff9d;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}

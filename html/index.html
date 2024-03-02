@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/info.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="../img/findflix-logo-removebg-preview.png" type="image/x-icon">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/icon.css">
+    <title>FINDFLIX</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo-container">
+                <img src="../img/findflix-logo-removebg-preview.png" class="nav-logo" alt="logo">
+                <div id="time"></div>
+            </div>
+            <ul class="nav-txt">
+                <li>
+                    <a id="navText" class="nav-home" href="index.html">Home</a>
+                </li>
+                <li>
+                    <a id="navText" class="nav-movies changedColor" href="search.html">search</a>
+                </li>
+                <li>
+                    <a id="navText" class="nav-about changedColor" href="portfolio.html">About</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="banner" class="banner">
+        <div class="mobile-banner">
+            <div id="mobile-banner-img" src="../img/chappie.jpg" alt="banner-mobile"></div>
+        </div>
+        <div class="description-container">
+            <ul id="listed">
+                <li>Action & Adventure</li>
+                <li>Sci-Fi</li>
+                <li>Fantasy</li>
+            </ul>
+            <h1 id="title" class="title">Chappie</h1>
+            <ul id="details">
+                <li>2015</li>
+                <li>DIRECTOR: <span>Neill Blomkamp</span></li>
+                <li>duration: <span>121 min</span></li>
+            </ul>
+            <p id="description" class="description">In a futuristic society where an indestructible robot police force keeps crime at bay, a lone droid evolves to the next level of artificial intelligence.</p>
+            <div class="btn-container">
+                <button id="find-movie" class="btn" onclick="toSearchPage()">find another movie</button>
+            </div>
+        </div>
+    </section>
+
+    <nav class="nav-bottom">
+        <ul>
+            <li><a href="index.html">
+                <i class="fa fa-home"></i>
+            </a></li>
+            <li><a href="search.html">
+                <i class="fa fa-search"></i>
+            </a></li>
+            <li><a href="portfolio.html">
+                <i class="gg-info"></i>
+            </a></li>
+        </ul>
+    </nav>
+
+    <script src="../javascript/script.js"></script>
+    <script>
+    </script>
+</body>
+</html>
